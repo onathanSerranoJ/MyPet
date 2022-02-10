@@ -12,6 +12,26 @@ public class Hamster extends myPets
             this.needToEx = needToEx;
             this.needsGrooming = needsGrooming;
         }
+    //4 Getters
+    public boolean isNeedToEx()
+    {
+        return needToEx;
+    }
+    public boolean isNeedsGrooming()
+    {
+        return needsGrooming;
+    }
+
+    //5 Setters
+    public void setNeedToEx(boolean needToEx)
+    {
+        this.needToEx = needToEx;
+    }
+    public void setNeedsGrooming(boolean needsGrooming)
+    {
+        this.needsGrooming = needsGrooming;
+    }
+
     //3 toString
         public String toString()
         {

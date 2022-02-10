@@ -9,6 +9,18 @@ public class Frog extends myPets
             this.isPoisonous = isPoisonous;
         }
 
+    //4 Getters
+    public boolean isPoisonous()
+    {
+        return isPoisonous;
+    }
+
+    //5 Setters
+    public void setIsPoisonous(boolean IsPoisonous)
+    {
+        isPoisonous = isPoisonous;
+    }
+
     //3 toString
         public String toString()
         {
