@@ -16,7 +16,7 @@ public class myPets
         }
 
     //4 Getters
-    public boolean isFriendly()
+    public boolean getIsFriendly()
     {
         return isFriendly;
     }
@@ -34,7 +34,7 @@ public class myPets
     }
 
     //5 Setters
-    public void setFriendly(boolean friendly)
+    public void setIsFriendly(boolean friendly)
     {
         isFriendly = friendly;
     }
@@ -50,6 +50,12 @@ public class myPets
     {
         this.name = name;
     }
+
+    //6 Brain Methods
+        public int sleepInSeconds()
+        {
+            return (int)(amtSleep*3600);
+        }
 
     //3 toString
         public String toString()

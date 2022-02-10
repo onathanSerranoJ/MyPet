@@ -10,7 +10,7 @@ public class Frog extends myPets
         }
 
     //4 Getters
-    public boolean isPoisonous()
+    public boolean getIsPoisonous()
     {
         return isPoisonous;
     }
