@@ -3,9 +3,9 @@ public class Frog extends myPets
     //1 Instance Variables
         private boolean isPoisonous;
     //2 Constructors
-        public Frog (boolean isPoisonous, boolean isFriendly, String foodType, double amtSleep, String name)
+        public Frog (boolean isPoisonous, boolean isFriendly, String foodType, double amtSleep, String name, int age)
         {
-            super (isFriendly, foodType, amtSleep, name);
+            super (isFriendly, foodType, amtSleep, name, age);
             this.isPoisonous = isPoisonous;
         }
 
@@ -20,6 +20,20 @@ public class Frog extends myPets
     {
         isPoisonous = isPoisonous;
     }
+
+    //6 brain method
+        @Override
+        public int monthlyFeedings()
+        {
+            int numFeeds = 30;
+            //1y+ once a week
+            //younger, every day
+            if(age >= 1)
+            {
+                numFeeds =4;
+            }
+            return numFeeds;
+        }
 
     //3 toString
         public String toString()
